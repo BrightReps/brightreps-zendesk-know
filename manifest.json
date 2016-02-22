@@ -1,0 +1,11 @@
+{
+  "name": "BrightReps",
+  "author": {
+    "name": "BrightReps",
+    "email": "jeff.roche@brightreps.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": ["ticket_sidebar", "new_ticket_sidebar"],
+  "frameworkVersion": "1.0"
+}
