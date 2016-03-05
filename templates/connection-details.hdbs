@@ -1,0 +1,24 @@
+<h3>Connection Status</h3>
+<table>
+<tr>
+  {{#if connection.rep }}
+  <td>Bright Rep:</td>
+  <td class="data"><a href="../../users/{{connection.id}}" target="_blank">{{connection.rep}}</a></td>
+  {{else}}
+  <td>Bright Rep:</td>
+  <td class="data">None found yet</td>
+  {{/if}}
+</tr>
+<tr>
+  <td>Status:</td>
+  <td class="data"></td>
+</tr>
+<tr>
+  <td>Added:</td>
+  <td class="data">{{connection.timestamp}}</td>
+</tr>
+<tr>
+  <td>Updated:</td>
+  <td class="data">{{connection.updated}}</td>
+</tr>
+</table>
