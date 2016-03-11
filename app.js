@@ -4,16 +4,16 @@
     // defaultState: 'home',
 
     resources: {
-      USERNAME: 'jeff',
-      PASSWORD: 'password',
-      TOKEN: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMCwiZW1haWwiOiJqZWZmLnJvY2hlQGJyaWdodHJlcHMuY29tIiwiZXhwIjoxNDU3MjI2Mjc5LCJ1c2VybmFtZSI6ImplZmYifQ.2WJJPM6bbUYHzpZoW1Q7hgCKTScLCJo-SsG756ys8kM',
       API_URL: 'http://frozen-hollows-2684.herokuapp.com/api',
     },
 
     events: {
       'app.activated': 'init',
-      'userGetRequest.done': 'this.showInfo',
-      'userGetRequest.fail': 'this.showError',
+      'checkToken.done': 'getConnection',
+      'checkToken.fail': 'loginScreen',
+      'click #login-submit': 'handleLogin',
+      'getToken.done': 'saveToken',
+      'getToken.fail': 'login',
       'click #add-btn': 'sendToBrightReps',
       'fetchConnection.done': 'showConnectionDetails',
       'fetchConnection.fail': 'showButton',
@@ -22,19 +22,11 @@
     },
 
     requests: {
-      userGetRequest: function(id) {
-        return {
-          url: '/api/v2/users/' + id + '.json',
-          type:'GET',
-          dataType: 'json'
-        };
-      },
-
       postConnection: function(ticket) {
         // https://support.zendesk.com/hc/en-us/articles/203903346
         return {
           url: helpers.fmt('%@/connections/', this.api_root),
-          headers: {"Authorization": helpers.fmt("JWT %@", this.token)},
+          headers: {"Authorization": helpers.fmt("JWT %@", this.store('brtoken'))},
           type: 'POST',
           contentType: 'application/json',
           data: JSON.stringify(ticket)
@@ -45,23 +37,61 @@
         // TODO: if doesn't exist, fine, if other error, return the error
         return {
           url: helpers.fmt('%@/connections/zendesk/%@/', this.api_root, ticket.id),
-          headers: {"Authorization": helpers.fmt("JWT %@", this.token)},
+          headers: {"Authorization": helpers.fmt("JWT %@", this.store('brtoken'))},
           type: 'GET',
           contentType: 'application/json'
+        };
+      },
+
+      getToken: function(login) {
+        return {
+          url: helpers.fmt('%@/auth/token/', this.api_root),
+          type: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify(login)
+        };
+      },
+
+      checkToken: function(data) {
+        return {
+          url: helpers.fmt('%@/auth/token-verify/', this.api_root),
+          type: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify(data)
         };
       }
     },
 
     init: function() {
-      this.username = this.setting('username') || this.resources.USERNAME;
-      this.password = this.setting('password') || this.resources.PASSWORD;
-      this.token = this.setting('token') || this.resources.TOKEN;
       this.api_root = this.setting('br_api_url') || this.resources.API_URL;
-      // Check if it's already a ticket
-      this.getConnection();
+      // Check if the token's valid, otherwise login
+      this.isTokenValid();
       this.switchTo('loading');
-      // If not, render button page
-      // If it is, render connection details page
+    },
+
+    isTokenValid: function() {
+      var token = this.store('brtoken');
+      this.ajax('checkToken', {token: token});
+    },
+
+    loginScreen: function() {
+      this.switchTo('login');
+    },
+
+    handleLogin: function(event) {
+      event.preventDefault();
+      var loginData = {
+        username: this.$('#username')[0].value,
+        password: this.$('#password')[0].value
+      };
+      this.ajax('getToken', loginData);
+    },
+
+    saveToken: function(data) {
+      // Save token and check connection
+      this.store('brtoken', data.token);
+      console.log("TOKEN", data.token);
+      this.getConnection();
     },
 
     getConnection: function() {
@@ -94,7 +124,6 @@
         contact_method: "Phone"
       };
       this.ajax('postConnection', ticketData);
-      console.log("SENT", id, " TO BRIGHTREPS");
       this.switchTo('loading');
       this.switchTo('connection-status');
     },

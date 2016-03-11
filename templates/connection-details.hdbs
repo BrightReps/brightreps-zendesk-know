@@ -3,7 +3,7 @@
 <tr>
   {{#if connection.rep }}
   <td>Bright Rep:</td>
-  <td class="data"><a href="../../users/{{connection.id}}" target="_blank">{{connection.rep}}</a></td>
+  <td class="data"><a href="https://frozen-hollows-2684.herokuapp.com/profile/{{connection.rep.username}}/" target="_blank">{{connection.rep.username}}</a></td>
   {{else}}
   <td>Bright Rep:</td>
   <td class="data">None found yet</td>
@@ -11,7 +11,11 @@
 </tr>
 <tr>
   <td>Status:</td>
-  <td class="data"></td>
+  {{#if connection.completed}}
+  <td class="data">Completed</td>
+  {{else}}
+  <td class="data">In Progress</td>
+  {{/if}}
 </tr>
 <tr>
   <td>Added:</td>
