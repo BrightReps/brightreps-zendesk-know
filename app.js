@@ -13,7 +13,7 @@
       'checkToken.fail': 'loginScreen',
       'click #login-submit': 'handleLogin',
       'getToken.done': 'saveToken',
-      'getToken.fail': 'login',
+      'getToken.fail': 'loginScreen',
       'click #add-btn': 'sendToBrightReps',
       'fetchConnection.done': 'showConnectionDetails',
       'fetchConnection.fail': 'showButton',
@@ -90,7 +90,6 @@
     saveToken: function(data) {
       // Save token and check connection
       this.store('brtoken', data.token);
-      console.log("TOKEN", data.token);
       this.getConnection();
     },
 
