@@ -2,10 +2,18 @@
   "name": "BrightReps",
   "author": {
     "name": "BrightReps",
-    "email": "jeff.roche@brightreps.com"
+    "email": "jeff.roche@brightreps.com",
+    "url": "https://www.brightreps.com"
   },
   "defaultLocale": "en",
   "private": true,
-  "location": ["ticket_sidebar", "new_ticket_sidebar"],
-  "frameworkVersion": "1.0"
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "https://brightreps-react.herokuapp.com"
+      }
+    }
+  },
+  "version": "0.1",
+  "frameworkVersion": "2.0"
 }

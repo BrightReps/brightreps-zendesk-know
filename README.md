@@ -1,9 +1,6 @@
 # BrightReps Zendesk App
 
-## What it Does
-
-Provides a button for sending tickets to either a specific BrightRep or any available BrightRep.
-
+Uses Zendesk App Framework v2
 
 ## Running Locally
 
