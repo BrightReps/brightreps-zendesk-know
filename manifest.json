@@ -10,7 +10,7 @@
   "location": {
     "support": {
       "ticket_sidebar": {
-        "url": "https://brightreps-react.herokuapp.com"
+        "url": "https://brightreps-zendesk.herokuapp.com"
       }
     }
   },
