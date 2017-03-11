@@ -10,7 +10,7 @@
   "location": {
     "support": {
       "ticket_sidebar": {
-        "url": "http://localhost:8080"
+        "url": "https://brightreps-react.herokuapp.com/"
       }
     }
   },
