@@ -9,9 +9,7 @@
   "private": true,
   "location": {
     "support": {
-      "ticket_sidebar": {
-        "url": "https://brightreps-react.herokuapp.com/"
-      }
+      "ticket_sidebar": "https://brightreps-react.herokuapp.com/"
     }
   },
   "version": "0.1",
