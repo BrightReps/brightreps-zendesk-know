@@ -6,10 +6,11 @@
     "url": "https://www.brightreps.com"
   },
   "defaultLocale": "en",
-  "private": true,
+  "private": false,
   "location": {
     "support": {
-      "ticket_sidebar": "https://brightreps-react.herokuapp.com/"
+      "ticket_sidebar": "https://app.brightreps.com",
+      "new_ticket_sidebar": "https://app.brightreps.com"
     }
   },
   "version": "0.1",
