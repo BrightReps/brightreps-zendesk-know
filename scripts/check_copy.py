@@ -19,7 +19,7 @@ for key in ('long_description', 'installation_instructions',):
     html = markdown2.markdown(text)
     output_file_name = "{}.html".format(key)
     output_file_path = os.path.join(OUT_FOLDER, output_file_name)
-    output_file = codecs.open(output_file_name, "w", encoding="utf-8",
+    output_file = codecs.open(output_file_path, "w", encoding="utf-8",
                               errors="xmlcharrefreplace")
     output_file.write(html)
     print "Generated: {}".format(output_file_name)
