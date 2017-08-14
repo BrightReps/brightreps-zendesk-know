@@ -19,13 +19,13 @@ Instructions here: https://developer.zendesk.com/apps/docs/publish/
 
 Notes:
 
-- updated branding and screenshots go in `./assets`. See: https://developer.zendesk.com/apps/docs/publish/create_assets
-- update `./translations/en.json` with app copy
+- updated branding and screenshots go in `./src/assets`. See: https://developer.zendesk.com/apps/docs/publish/create_assets
+- update `./src/translations/en.json` with app copy
 - note that descriptions and installation instructions need to be markdown saved as json text fields. This is prone to errors so we can verify the markdown descriptions renders correctly by running `cd ./scripts && python check_copy.py` and checking the outputted html
-- update app version in `manifest.json`
+- update app version in `./src/manifest.json`
 - generate a new zip file of the app by running:
 
-    $ zat package
+    $ zat package --path=./src
 
 - publish it to the marketplace by uploading the zip file
 - tag the release in github
