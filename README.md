@@ -17,11 +17,20 @@ Navigate to https://d3v-brightreps.zendesk.com/agent/tickets/1?zat=true
 
 Instructions here: https://developer.zendesk.com/apps/docs/publish/
 
-Notes:
+### Updating Copy
+
+The long description and installation instructions need to be in markdown saved as fields in the `en.json` file. To make changes, edit the files in the `copy` folder, then run:
+
+  $ python make.py --update --make_html
+
+The `--make_html` flag will generate html files in the `_build` directory to make sure everything is rendering correctly.
+
+### Generate the Build
+
+Checklist:
 
 - updated branding and screenshots go in `./src/assets`. See: https://developer.zendesk.com/apps/docs/publish/create_assets
-- update `./src/translations/en.json` with app copy
-- note that descriptions and installation instructions need to be markdown saved as json text fields. This is prone to errors so we can verify the markdown descriptions renders correctly by running `cd ./scripts && python check_copy.py` and checking the outputted html
+- update `./src/translations/en.json` with app copy (see above)
 - update app version in `./src/manifest.json`
 - generate a new zip file of the app by running:
 
