@@ -6,14 +6,13 @@
     "url": "https://www.brightreps.com"
   },
   "defaultLocale": "en",
-  "private": true,
+  "private": false,
   "location": {
     "support": {
-      "ticket_sidebar": "https://brightreps-react-staging.herokuapp.com",
-      "new_ticket_sidebar": "https://brightreps-react-staging.herokuapp.com"
+      "ticket_sidebar": "https://app.brightreps.com",
+      "new_ticket_sidebar": "https://app.brightreps.com"
     }
   },
   "version": "0.1.7",
-  "frameworkVersion": "2.0",
-  "gaID": "UA-96472868-2"
+  "frameworkVersion": "2.0"
 }
