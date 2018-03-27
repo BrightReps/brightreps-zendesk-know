@@ -6,8 +6,6 @@ BrightReps Sidekick™ enables customer support teams to build, use, and measure
 
 - Process Analytics - As reps work from Sidekick, managers are able to view process analytics from the Admin Portal including heat maps of step completions, time taken by step, and rep feedback to continuously measure and improve their processes.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vO3R85u32ds" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 Below are some of the step types available on Sidekick, all with no code required.
 
 ### Free
@@ -31,3 +29,5 @@ Below are some of the step types available on Sidekick, all with no code require
 - General (download dynamic PDF forms)
 
 We are always adding new step types and integrations based on feedback from our customers. Check out our app and let us know how we can help with your support processes!
+
+For more information including a walkthrough video, check out [https://www.brightreps.com/zendesk/](https://www.brightreps.com/zendesk/)

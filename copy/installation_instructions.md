@@ -1,3 +1,5 @@
+To access all the benefits of process management, process analytics and agent scripting that our free tier provides simply follow the below instructions to sign up:
+
 - Install the free "BrightReps Sidekick" app from the Zendesk app marketplace
 - Open a ticket and Sidekick will launch on the right
 - Select the option to sign in with Zendesk
