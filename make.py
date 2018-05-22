@@ -1,6 +1,6 @@
 import click
 import codecs
-import io
+from collections import OrderedDict
 import json
 import markdown2
 import os
@@ -35,22 +35,23 @@ def generate_test_html():
 def generate_copy(update, make_html):
     if update:
         with open(EN_BASE_FILE, 'rb') as f:
-            en_file = json.loads(f.read())
+            en_file = json.loads(f.read(), object_pairs_hook=OrderedDict)
         with open(LONG_DESCR_FILE) as f:
             long_description = f.read()
         with open(INSTALL_INSTR_FILE) as f:
-            installation_instructions = f.read()
-        en_file['app']['long_description'] = long_description
-        en_file['app']['installation_instructions'] = installation_instructions
+            instructions = f.read()
+        en_file['app']['support']['long_description'] = long_description
+        en_file['app']['support']['installation_instructions'] = instructions
+        en_file['app']['chat']['long_description'] = long_description
+        en_file['app']['chat']['installation_instructions'] = instructions
         write_en_file(en_file)
     if make_html:
         generate_test_html()
 
 
 def write_en_file(data):
-    click.echo("Name: %s" % data['app']['name'])
     with open(EN_FILE, 'w') as f:
-        as_str = json.dumps(data, indent=2, sort_keys=True)
+        as_str = json.dumps(data, indent=2)
         f.write(as_str)
     click.echo("Wrote updated en.json file")
 
