@@ -11,9 +11,12 @@
     "support": {
       "ticket_sidebar": "https://app.brightreps.com",
       "new_ticket_sidebar": "https://app.brightreps.com"
+    },
+    "chat": {
+      "chat_sidebar": "https://app.brightreps.com"
     }
   },
-  "version": "0.1.8",
+  "version": "0.2.0",
   "frameworkVersion": "2.0",
   "gaID": "UA-96472868-2"
 }
