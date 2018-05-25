@@ -18,15 +18,24 @@ OUT_FOLDER = os.path.join(PROJECT_DIR, '_build')
 def generate_test_html():
     with open(EN_FILE, 'rb') as f:
         copy_raw = json.loads(f.read())
-    for key in ('long_description', 'installation_instructions',):
-        text = copy_raw['app'].get(key)
-        html = markdown2.markdown(text)
-        output_file_name = "{}.html".format(key)
-        output_file_path = os.path.join(OUT_FOLDER, output_file_name)
-        output_file = codecs.open(output_file_path, "w", encoding="utf-8",
-                                  errors="xmlcharrefreplace")
-        output_file.write(html)
-        click.echo("Generated test html: %s" % output_file_name)
+
+    make_html_file(copy_raw['app']['support']['long_description'],
+                   'support_long_description.html')
+    make_html_file(copy_raw['app']['support']['installation_instructions'],
+                   'support_installation_instructions.html')
+    make_html_file(copy_raw['app']['chat']['long_description'],
+                   'chat_long_description.html')
+    make_html_file(copy_raw['app']['chat']['installation_instructions'],
+                   'chat_installation_instructions.html')
+
+
+def make_html_file(text, output_file_name):
+    html = markdown2.markdown(text)
+    output_file_path = os.path.join(OUT_FOLDER, output_file_name)
+    output_file = codecs.open(output_file_path, "w", encoding="utf-8",
+                              errors="xmlcharrefreplace")
+    output_file.write(html)
+    click.echo("Generated test html: %s" % output_file_name)
 
 
 @click.command()
