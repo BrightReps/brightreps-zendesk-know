@@ -1,12 +1,12 @@
-BrightReps Sidekick™ enables customer support teams to build, use, and measure their process flows in a streamlined way.
+Whether it's returns / RMAs, order status inquiries, troubleshooting, or onboarding / offboarding BrightReps Sidekick enables you to automate your team's most painful processes and consolidate them down to a single interface - right from the ticket.
 
 - Flow Builder - From the Admin Portal managers can build, download, and publish their process flows for reps to follow right from the Zendesk ticket.
 
-- Integrated Workflows - Sidekick is your knowledge base of processes that is searchable and suggests workflows based on ticket criteria.  From the Sidekick app on Zendesk reps receive step by step instructions, including integrated steps to eliminate the need to swivel chair between multiple systems and reference static process flow documents. Integrated steps are available on the Paid Plan ($20 per user per month; includes a 30-day free trial).  Users on the Enterprise Plan ($49 per user per month) can add custom integrations in addition to using the existing Integrations Library, no code required.
+- Integrated Workflows - Sidekick is your knowledgebase of processes that is searchable and suggests workflows based on ticket criteria.  From the Sidekick app on Zendesk reps receive step by step instructions, including integrated steps to eliminate the need to swivel chair between multiple systems and reference static process flow documents. Sidekick remembers what step you left off at, providing actionable context to anyone viewing the ticket. Integrated steps are available on the Paid Plan ($20 per user per month; includes a 30-day free trial).  Users on the Enterprise Plan ($49 per user per month) can add custom integrations in addition to using the existing Integrations Library, no code required.
 
 - Process Analytics - As reps work from Sidekick, managers are able to view process analytics including heat maps of step completions, time taken by step, and rep feedback to continuously measure and improve their processes. Enterprise Plan users will also have access to a real-time Work Dashboard to view in-progress and recently completed work parsed by rep, process, and step.
 
-Below are some of the process flow step types available on Sidekick, all with no code required.
+Below are some of the step types and integrations available on Sidekick, all with no code required.
 
 ### Free
 
@@ -16,7 +16,7 @@ Below are some of the process flow step types available on Sidekick, all with no
 
 - Zendesk (automatically update Zendesk ticket fields or add comments to internal or external recipients)
 
-- Import Macros (import existing macros and add as steps to a process)
+- Apply Macros (apply an existing macros as a step within a process)
 
 ### Integrated ($20 per user per month)
 
@@ -27,6 +27,22 @@ Below are some of the process flow step types available on Sidekick, all with no
 - EasyPost (create shipping labels and search shipments)
 
 - Arena Solutions (generate new Quality Process records)
+
+- Pivotal Tracker (log a bug on Pivotal Tracker)
+
+- Slack (post a custom templated message to a designated slack channel)
+
+- Stripe (look up a customer charge or send customer invoice)
+
+- GitHub (open new GitHub issues)
+
+- Wrike (create new tasks)
+
+- Twilio (send a custom templated text message)
+
+- Bitly (create a shortened shareable link)
+
+- Rebrandly (create branded links to send to customers)
 
 - General (download dynamic PDF forms)
 
@@ -42,4 +58,4 @@ Below are some of the process flow step types available on Sidekick, all with no
 
 We are always adding new features and integrations based on feedback from our customers. Check out our app and let us know how we can help with your support processes!
 
-For more information including a walkthrough video, check out [https://www.brightreps.com/zendesk/](https://www.brightreps.com/zendesk/)  or send us a note at [support@brightreps.com](mailto:support@brightreps.com).
+For more information including a walkthrough video, check out [https://www.brightreps.com](https://www.brightreps.com)  or send us a note at [support@brightreps.com](mailto:support@brightreps.com).
