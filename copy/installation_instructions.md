@@ -8,7 +8,7 @@ Follow this easy sign-up process to access all of the benefits of the free-tier,
 - Additional team members can sign up within the app on Zendesk by signing in using their Zendesk credentials. They will be assigned an Employee role but Admin users can update their permissions from the Admin Portal by going to Manage Company > Manage Team.
 
 
-To enable integrations, upgrade to the "Integrated" or “Enterprise” plan and visit the Integrations Lab to enter the required API credentials. Some of the available integrations and functions include:
+To enable integrations, visit the Integrations Lab to enter the required API credentials. Some of the available integrations and functions include:
 
 - Zendesk (automatically update Zendesk ticket fields or add comments to internal or external recipients)
 
@@ -44,10 +44,6 @@ To enable integrations, upgrade to the "Integrated" or “Enterprise” plan and
 
 - And more...
 
-Upgrade to the “Enterprise” plan to enable the following features
-
-- Custom Integrations (integrate your tools with Sidekick, no code required)
-
-- Real-Time Work Dashboard
+See our [pricing page](https://www.brightreps.com/pricing/) for more details on our plans and pricing.
 
 For help getting started or a product walkthrough visit the [BrightReps Resource Center](https://resources.brightreps.com) or contact [support@brightreps.com](mailto:support@brightreps.com)
