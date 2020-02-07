@@ -1,11 +1,11 @@
-Whether it's returns / RMAs, order status inquiries, troubleshooting, or onboarding / offboarding BrightReps Sidekick enables you to automate your team's most painful workflows and consolidate them down to a single interface using a knowledgebase of step by step instructions, decision trees, a customer 360, actionable context, and powerful integrations.
+Whether it's returns / RMAs, order status inquiries, troubleshooting, or onboarding / offboarding BrightReps Sidekick enables you to automate your team's most painful workflows and consolidate them down to a single interface using a knowledgebase of step-by-step instructions, decision trees, a customer 360, actionable context, and powerful integrations.
 
 Follow this easy sign-up process to access all of the benefits of the free-tier, including process management, internal knowledge base, process analytics, and agent scripting:
 
 - Install the "BrightReps Sidekick" app from the Zendesk app marketplace
 - Open a ticket and Sidekick will launch on the right sidebar.
 - Sign in with Zendesk. If you are the first user for your company you will be prompted to enter your Company Name and click Sign Up. You will automatically be assigned an Admin role.
-- Additional team members can sign up within the app on Zendesk by signing in using their Zendesk credentials. They will be assigned an Employee role but Admin users can update their permissions from the Admin Portal by going to Manage Company > Manage Team.
+- Additional team members can sign up within the app on Zendesk by signing in using their Zendesk credentials. They will be assigned an Employee role but Admin users can update their permissions from the Admin Portal by going to Manage Company > Team.
 
 
 To enable integrations, visit the Integrations Lab to enter the required API credentials. Some of the available integrations and functions include:
