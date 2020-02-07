@@ -2,7 +2,7 @@
 
 Whether it's returns / RMAs, order status inquiries, troubleshooting, or onboarding / offboarding BrightReps Sidekick enables you to automate your team's most painful processes and consolidate them down to a single interface - right from the ticket.
 
-- Flow Builder - From the Admin Portal managers can build, download, and publish their process flows for reps to follow right from the Zendesk ticket.
+- Flow Builder - From the Admin Portal managers can design, download, and deploy their process flows directly to the rep on the Zendesk ticket.
 
 - Integrated Workflows - Sidekick is your knowledgebase of processes that is searchable and suggests workflows based on ticket criteria. From the Sidekick app on Zendesk reps receive step by step instructions, including integrated steps to eliminate the need to swivel chair between multiple systems and reference static process flow documents. Sidekick remembers what step you left off at, providing actionable context to anyone viewing the ticket.
 
