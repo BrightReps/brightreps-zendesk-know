@@ -9,14 +9,14 @@
   "private": false,
   "location": {
     "support": {
-      "ticket_sidebar": "https://app.brightreps.com",
-      "new_ticket_sidebar": "https://app.brightreps.com"
+      "ticket_sidebar": "https://next.brightreps.com/know-zendesk",
+      "new_ticket_sidebar": "https://next.brightreps.com/know-zendesk"
     },
     "chat": {
-      "chat_sidebar": "https://app.brightreps.com"
+      "chat_sidebar": "https://next.brightreps.com/know-zendesk"
     }
   },
-  "version": "0.2.2",
+  "version": "0.0.1",
   "frameworkVersion": "2.0",
-  "gaID": "UA-96472868-2"
+  "gaID": "UA-96472868-5"
 }

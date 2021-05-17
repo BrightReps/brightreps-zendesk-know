@@ -1,4 +1,4 @@
-# BrightReps Zendesk App
+# BrightReps Zendesk Knowledge App
 
 Uses Zendesk App Framework v2
 
