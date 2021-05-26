@@ -10,13 +10,20 @@
   "location": {
     "support": {
       "ticket_sidebar": "https://next.brightreps.com/know-zendesk",
-      "new_ticket_sidebar": "https://next.brightreps.com/know-zendesk"
+      "new_ticket_sidebar": "https://next.brightreps.com/know-zendesk",
+      "ticket_editor": {
+        "url": "https://next.brightreps.com/know-zendesk",
+        "size": {
+          "width": "450px",
+          "height": "320px"
+        }
+      }
     },
     "chat": {
       "chat_sidebar": "https://next.brightreps.com/know-zendesk"
     }
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "frameworkVersion": "2.0",
   "gaID": "UA-96472868-5"
 }
