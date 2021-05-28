@@ -18,12 +18,9 @@
           "height": "320px"
         }
       }
-    },
-    "chat": {
-      "chat_sidebar": "https://next.brightreps.com/know-zendesk"
     }
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "frameworkVersion": "2.0",
   "gaID": "UA-96472868-5"
 }
